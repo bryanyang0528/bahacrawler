@@ -27,6 +27,7 @@ class BahaRancking(Spider):
 		for table in tables:
 			
 			item = BahaCrawlerItem()
+			item['spider'] = "bahaRanking"
 			item['title'] = table.xpath('.//td/h1/a/text()').extract()
 			item['rank'] = table.xpath('.//td[@width="35"]/text()').extract()
 

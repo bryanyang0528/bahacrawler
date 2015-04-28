@@ -14,6 +14,6 @@ class BahaCrawlerItem(scrapy.Item):
  	title = Field()
  	rank = Field()
  	hot = Field()
- 	lauch_day =Field()
- 	
+ 	lauch_day = Field()
+ 	spider = Field()
 

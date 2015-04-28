@@ -31,6 +31,7 @@ class BahaNotLaunch(Spider):
 				pass
 			else:
 				item = BahaCrawlerItem()
+				item['spider'] = "bahaNotLaunch"
 				item['title'] = table.xpath('.//td[@class="ACG-tb1left"]/a/text()')[0].extract()
 				item['hot'] = table.xpath('.//td/text()')[3].extract()
 				item['lauch_day'] = table.xpath('.//td/text()')[1].extract()
